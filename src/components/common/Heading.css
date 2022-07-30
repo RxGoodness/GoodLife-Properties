@@ -1,0 +1,32 @@
+.headings {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    /* background-color: #fff; */
+    /* color: #fff; */
+
+  }
+  .headings h1 {
+    /* color: #2d3954; */
+    color:silver;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 45px;
+  }
+  .headings h3 {
+    /* color: #2d3954; */
+    color: rgb(79, 158, 42);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 10px
+  }
+  .headings p {
+    color: #72809d;
+  }
+  @media screen and (max-width: 800px) {
+    .headings {
+        width: 100%;
+    }
+}
