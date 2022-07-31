@@ -162,7 +162,7 @@
 .glogin .overlay {
 	background: #FF416C;
 	background: -webkit-linear-gradient(to right, #2bb5ff, #339fa9);
-	background: linear-gradient(to right, rgb(245, 29, 29), rgb(144, 160, 65));
+	background: linear-gradient(to right, #27ae60, rgb(144, 160, 65));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
