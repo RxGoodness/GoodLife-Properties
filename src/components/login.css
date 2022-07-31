@@ -236,17 +236,18 @@
     right: 0;
     text-align: center;
     z-index: 999;
+    height: 5%;
 }
 
-footer p {
+.glogin footer p {
     margin: 10px 0;
 }
 
-footer i {
+.glogin footer i {
     color: red;
 }
 
-footer a {
+.glogin footer a {
     color: #3c97bf;
     text-decoration: none;
 }

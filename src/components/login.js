@@ -268,9 +268,12 @@ const Login = () => {
 				<h1>Hello, Friend!</h1>
         <p>Welcome to your next home, we are proud of your happy living</p>
 				<p>Enter your details and start a journey with us</p>
-				<button className="ghost" id="signUp"
-        //  onClick={showSignup}
-         >Sign Up</button>
+				{/* <button className="ghost" id="signUp"
+         onClick ={() => {
+	container.classList.add("right-panel-active");
+}}
+    >Sign Up</button> */}
+    	<button className="ghost" id="signUp">Sign Up</button>
 			</div>
 		</div>
 	</div>
@@ -279,9 +282,9 @@ const Login = () => {
 <footer>
 	<p>
 		Created<i className="fa fa-heart"></i> by
-		<a target="_blank" href="https://florin-pop.com">RxGoodness</a>
-		- a software developer and a web designer. Link up with him here
-		<a target="_blank" href="https://www.linkedin.com/in/toheeb-adedokun">here</a>.
+		<a target="_blank" href="https://rxgoodness.herokuapp.com">RxGoodness</a>
+		- a software developer and a web designer. Link up with him 
+		<a target="_blank" href="https://www.linkedin.com/in/toheeb-adedokun"> here</a>.
 	</p>
 </footer>
 </div>
