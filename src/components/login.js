@@ -216,11 +216,13 @@
 
 // export default Login;
 
-import React from "react";
+import React, {useState} from "react";
 import './login.css';
 
 
 const Login = () => {
+   const [showSignup, setShowSignup] = useState(false);
+
   return (
 <div className="glogin">
 {/* <h2>Welcome to your next home, we are proud of your happy living</h2> */}
@@ -266,7 +268,9 @@ const Login = () => {
 				<h1>Hello, Friend!</h1>
         <p>Welcome to your next home, we are proud of your happy living</p>
 				<p>Enter your details and start journey with us</p>
-				<button className="ghost" id="signUp">Sign Up</button>
+				<button className="ghost" id="signUp"
+        //  onClick={showSignup}
+         >Sign Up</button>
 			</div>
 		</div>
 	</div>
