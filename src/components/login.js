@@ -216,12 +216,45 @@
 
 // export default Login;
 
-import React, {useState} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import './login.css';
 
 
 const Login = () => {
-   const [showSignup, setShowSignup] = useState(false);
+   const [showSignup, setShowSignup] = useState(null);
+   const ref = useRef(null);
+ 
+const handleSignUp = () => {
+  setShowSignup('right-panel-active');
+}
+//    useEffect(() => {
+//     const signUpButton = document.getElementById('signUp');
+//     const signInButton = document.getElementById('signIn');
+//     const container = document.getElementById('container');
+
+//     const handleClick =  () => {
+//       	container.classList.add("right-panel-active");
+//       };
+  
+// // signUpButton.addEventListener('click', () => {
+// // 	container.classList.add("right-panel-active");
+// // });
+
+// // signInButton.addEventListener('click', () => {
+// // 	container.classList.remove("right-panel-active");
+// // });
+
+
+//     const element = ref.current;
+  
+//     element.addEventListener('click', handleClick);
+  
+//     // 👇️ remove the event listener when component unmounts
+//     return () => {
+//       element.removeEventListener('click', handleClick);
+//     };
+//   }, []);  
+  
 
   return (
 <div className="glogin">
