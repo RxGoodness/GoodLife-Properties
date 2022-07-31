@@ -9,7 +9,7 @@ header {
 }
 header img {
   width: 170px;
-  height: 65px;
+  height: 60px;
 }
 header a {
   margin-left: 30px;
@@ -40,6 +40,7 @@ header .toggle {
 }
 .goodbtn .btn1:hover {
 color: silver;
+cursor: pointer;
   /* margin: 25px; */
   /* border: 15px; */
   /* padding: 10px; */

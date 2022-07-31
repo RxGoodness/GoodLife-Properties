@@ -3,6 +3,7 @@ import "./header.css"
 import { nav } from "../../data/Data"
 import { Link } from "react-router-dom"
 import good3 from '../../../assets/goodlife3.png'
+import Login from "../../login"
 
 const Header = () => {
   const [navList, setNavList] = useState(false)
@@ -30,15 +31,18 @@ const Header = () => {
               <span>2</span> My List
             </h4>
             <div className="goodbtn">
+              {/* <Link to='/signup'> */}
             <button className='btn1'>
               <i className='fa fa-log-in'></i> Sign Up
             </button>
+            {/* </Link> */}
+            <Link to='/login'>
             <button className='btn1'>
               <i className='fa fa-sign-in'></i> Log in
             </button>
+            </Link>
             </div>
           </div>
-
           <div className='toggle'>
             <button onClick={() => setNavList(!navList)}>{navList ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}</button>
           </div>

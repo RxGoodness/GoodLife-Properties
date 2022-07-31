@@ -5,7 +5,7 @@
   background-size: cover;
   height: 90vh;
   width: 100%;
-  animation: change 30s infinite ease-in-out;
+  animation: change 30s infinite ease-in-out alternate-reverse forwards running;
   /* animation: moving 50s linear infinite; */
 }
 
