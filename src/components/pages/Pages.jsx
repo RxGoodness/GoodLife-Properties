@@ -15,6 +15,7 @@ const Pages = () => {
     <>
       <Router>
         <Header />
+        <Route exact path='/login' component={Login} />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
@@ -22,9 +23,10 @@ const Pages = () => {
           <Route exact path='/blog' component={Blog} />
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />
-          <Route exact path='/login' component={Login} />
+          {/* <Route exact path='/login' component={Login} /> */}
         </Switch>
         <Footer />
+        {/* <Route exact path='/login' component={Login} /> */}
       </Router>
     </>
   )
