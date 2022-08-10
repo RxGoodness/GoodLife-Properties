@@ -5,6 +5,15 @@
 }
 
 .glogin {
+	background-image: url("../../../public/images/banner.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 90vh;
+	width: 100%;
+	animation: change 30s infinite ease-in-out alternate-reverse forwards running;
+
+
 	background: #f6f5f7;
 	display:block;
 	justify-content: center;
@@ -48,7 +57,9 @@
 .glogin button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	/* background-color: #FF4B2B; */
+	background-color: #48a648;
+	border-color: #fff;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -110,7 +121,7 @@
 	height: 100%;
 	transition: all 0.6s ease-in-out;
 	padding-top: 0rem;
-	margin-top: 0rem;
+	margin-top: -5% !important;
 }
 
 .glogin .sign-in-container {
@@ -128,7 +139,8 @@
 	width: 50%;
 	opacity: 0;
 	z-index: 1;
-	margin-top: 2%;
+	margin-top: 0%;
+	padding-top: 0%;
 }
 
 .glogin .container.right-panel-active .sign-up-container {
@@ -186,6 +198,7 @@
 }
 
 .glogin .overlay-panel {
+	background: linear-gradient(to right, #27ae60, rgb(144, 160, 65));
 	position: absolute;
 	display: flex;
 	align-items: center;
