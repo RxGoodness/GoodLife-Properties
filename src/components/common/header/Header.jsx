@@ -31,11 +31,11 @@ const Header = () => {
               <span>2</span> My List
             </h4>
             <div className="goodbtn">
-              {/* <Link to='/signup'> */}
+              <Link to='/signup'>
             <button className='btn1'>
               <i className='fa fa-log-in'></i> Sign Up
             </button>
-            {/* </Link> */}
+            </Link>
             <Link to='/login'>
             <button className='btn1'>
               <i className='fa fa-sign-in'></i> Log in

@@ -217,30 +217,20 @@
 // export default Login;
 
 import React, {useState, useEffect, useRef} from "react";
-import './login.css';
-import {Redirect, Link, NavLink} from 'react-router-dom'
+import './user.css';
 
-// const navigate = useNavigate()
-// const redirect = Redirect( )
-const Login = () => {
-   const [showSignup, setShowSignup] = useState('container');
-//    const ref = useRef(null);
+const UserLoginSignUp = ({cssStyle1, cssStyle2, cssDefault}) => {
+   const [showSignup, setShowSignup] = useState(cssDefault);
  
 const handleSignUp = () => {
-  setShowSignup('container right-panel-active');
-  <Redirect to='signup'/>
- 
-//   <Link to='signup'/>
-{/* <NavLink replace to='signup'/> */}
-// navigate('signup');
+  setShowSignup(cssStyle1);
 }
 const handleSignIn = () => {
-	setShowSignup('container')
+	setShowSignup(cssStyle2)
 }
 
   return (
 <div className="glogin">
-{/* <h2>Welcome to your next home, we are proud of your happy living</h2> */}
 <div className={showSignup}>
 	<div className="form-container sign-up-container">
 		<form action="#">
@@ -255,7 +245,6 @@ const handleSignIn = () => {
 			<input type="text" placeholder="Location" />
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
-			
 			<button>Sign Up</button>
 		</form>
 	</div>
@@ -285,7 +274,11 @@ const handleSignIn = () => {
 				<h1>Hello, Friend!</h1>
         <p>Welcome to your next home, we are proud of your happy living</p>
 				<p>Enter your details and start a journey with us</p>
-
+				{/* <button className="ghost" id="signUp"
+         onClick ={() => {
+	container.classList.add("right-panel-active");
+}}
+    >Sign Up</button> */}
     	<button className="ghost" id="signUp" onClick={handleSignUp}>Sign Up</button>
 			</div>
 		</div>
@@ -294,9 +287,9 @@ const handleSignIn = () => {
 
 <footer>
 	<p>
-		Created<i className="fa fa-heart"></i>  by  
-		<a target="_blank" href="https://rxgoodness.herokuapp.com">  RxGoodness</a>
-		- a fullstack software developer and a web designer. Link up with him 
+		Created<i className="fa fa-heart"></i> by 
+		<a target="_blank" href="https://rxgoodness.herokuapp.com"> RxGoodness </a>
+		 - A fullstack software developer and a web designer. Link up with him 
 		<a target="_blank" href="https://www.linkedin.com/in/toheeb-adedokun"> here</a>.
 	</p>
 </footer>
@@ -304,4 +297,16 @@ const handleSignIn = () => {
 )
 }
 
-export default Login;
+export default UserLoginSignUp;
+
+// const signUpButton = document.getElementById('signUp');
+// const signInButton = document.getElementById('signIn');
+// const container = document.getElementById('container');
+
+// signUpButton.addEventListener('click', () => {
+// 	container.classList.add("right-panel-active");
+// });
+
+// signInButton.addEventListener('click', () => {
+// 	container.classList.remove("right-panel-active");
+// });

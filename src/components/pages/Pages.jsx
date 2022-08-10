@@ -8,7 +8,9 @@ import Pricing from "../pricing/Pricing"
 import Blog from "../blog/Blog"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
-import Login from "../login"
+// import Login from "../login"
+import Login from "../userLoginSignup/login"
+import signup from "../userLoginSignup/signup"
 
 const Pages = () => {
   return (
@@ -16,6 +18,7 @@ const Pages = () => {
       <Router>
         <Header />
         <Route exact path='/login' component={Login} />
+        <Route exact path='/signup' component={signup} />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
