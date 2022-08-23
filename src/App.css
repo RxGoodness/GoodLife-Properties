@@ -47,7 +47,7 @@ button {
 	/* background-color:rgba(0,0,0,0.25); */
   background-color: #48a648;
   /* 0 10px 10px rgba(0,0,0,0.22); */
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 	font-size: 12px;
 	font-weight: bold;
 	padding: 12px 15px;

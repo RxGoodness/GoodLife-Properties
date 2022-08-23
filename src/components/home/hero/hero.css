@@ -116,18 +116,19 @@ form h4 {
   font-weight: 500;
 }
 .goodsearchbtn1 {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 2px 2px !important ;
     margin-top: 40px !important;
     border-top: 100px;
     justify-self: center;
-    background: lightcoral;
+    /* background: lightcoral; */
     /* border: none; */
     color: #fff;
     cursor: pointer;
     font-weight: bold;
     margin: 10px;
     height: 40px;
+    /* width: 10rem; */
     width: 90px;
     /* justify-content: center; */
     /* hover: #fff; */
@@ -135,6 +136,14 @@ form h4 {
 .goodsearchbtn1:hover {
   background: grey;
 }
+
+/* .goodsearchbtn1 i {
+  height: 5rem;
+  width: 15rem;
+  color: blue;
+  background-color: bisque;
+} */
+
 .goodsearchbtn1 i:hover{
   background: #9d2c97;
 color: silver;
